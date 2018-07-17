@@ -24,18 +24,6 @@
 <meta name="twitter:title" content="">
 
 <!-- Paste google analytics code here -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-97903484-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-97903484-2');
-</script>
-
-<!-- Scripts -->
 
   </head>
   <body>
@@ -141,9 +129,68 @@
     <button class="buttonPadding" type="button" name="button"><a class="buttonPadding"href="#">Schedule an Appointment</a></button>
   </div>
 </section>
-<section>
-  <h3 class="textCenter">Pricing</h3>
+<section class="grid padding">
+  <div class="col-12">
+    <h3 class="textCenter">Pricing</h3>
+    <hr class="hrCenter">
+  </div>
+  <div class="col-6_xs-6 padding liStyle">
+    <h3>Airbrush Tans</h3>
+    <li>Full Body - $$$</li>
+    <li>Legs - $$$$</li>
+    <li>Arms - $$$</li>
+    <li>Second Application for Darker Tan - $$$</li>
+  </div>
+  <div class="col-6_xs-6 padding liStyle">
+    <h3>Products</h3>
+    <li>Full Body - $$$</li>
+    <li>Legs - $$$$</li>
+    <li>Arms - $$$</li>
+    <li>Second Application for Darker Tan - $$$</li>
+  </div>
+</section>
+<section class="padding">
+  <h2 class="textCenter">Frequently Asked Questions</h2>
   <hr class="hrCenter">
+</section>
+<section>
+  <!-- FAQ -->
+  <div class="parent-container">
+    <ul class="faq">
+      <li>
+        <h3 class="question">Will I look orange?
+          <div class="plus-minus-toggle collapsed"></div>
+        </h3>
+        <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis
+          ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed
+          fermentum risus. Phasellus venenatis ultricies dignissim.</div>
+      </li>
+      <li>
+        <h3 class="question">How long will my tan last?
+          <div class="plus-minus-toggle collapsed"></div>
+        </h3>
+        <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis
+          ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed
+          fermentum risus. Phasellus venenatis ultricies dignissim.</div>
+      </li>
+      <li>
+        <h3 class="question">Can I make my tan last longer?
+          <div class="plus-minus-toggle collapsed"></div>
+        </h3>
+        <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis
+          ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed
+          fermentum risus. Phasellus venenatis ultricies dignissim.</div>
+      </li>
+      <li>
+        <h3 class="question">What do I wear during my tan?
+          <div class="plus-minus-toggle collapsed"></div>
+        </h3>
+        <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis
+          ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed
+          fermentum risus. Phasellus venenatis ultricies dignissim.</div>
+      </li>
+    </ul>
+  </div>
 </section>
 
 
@@ -156,6 +203,7 @@
 </div>
 <div class="col-4 textCenter padding">
   <h3 class="padding">Book an Appointment Today</h3>
+    <button class="buttonPadding" type="button" name="button"><a class="buttonPadding"href="#">Schedule an Appointment</a></button>
 
 </div>
 <div class="col-4 padding textCenter">
@@ -175,14 +223,18 @@
 </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script id="dsq-count-scr" src="//http://justynjen.disqus.com/count.js" async></script>
 <script>
 $( document ).ready(function() {
    $(".hamburger-button").click(function(){
      $(".hamburger-button").toggleClass("active");
      $(".hamburger-menu").slideToggle();
    });
+   $('.faq li .question').click(function () {
+    $(this).find('.plus-minus-toggle').toggleClass('collapsed');
+    $(this).parent().toggleClass('active');
+  });
 });
+
 </script>
 
 
