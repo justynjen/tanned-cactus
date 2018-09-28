@@ -11,7 +11,7 @@
 <!--  Links to stylesheets -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.4.1/gridlex.min.css" rel="stylesheet" >
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Sacramento" rel="stylesheet">
 <link href="/styles/styles.css" rel="stylesheet">
 
@@ -21,7 +21,6 @@
 <meta property="og:image" content="">
 <meta property="og:description" content="">
 <meta property="og:title" content="">
-<meta name="twitter:title" content="">
 
 <!-- Paste google analytics code here -->
 
@@ -29,18 +28,18 @@
   <body>
 
       <header class="grid-spaceBetween-middle mainNav" id="navigation">
-  <div class="col-5">
+  <div class="col-5 padding">
     <a href="/"><img class="logoImage" src="/images/katie_cactusheader.png" alt=""></a>
   </div>
      <nav class="col-7 textCenter navbar">
        <div class="menu">
          <ul>
-           <li><a href="/about"> About </a></li>
-           <li><a href="/resources"> Services </a></li>
-           <li><a href="/blog"> Pricing </a></li>
-           <li><a href="/contact"> FAQ </a></li>
-           <li><a href="/blog"> Blog </a></li>
-           <li><a href="/contact"> Contact </a></li>
+           <li><a href="#about"> About </a></li>
+           <li><a href="#services"> Services </a></li>
+           <li><a href="#pricing"> Pricing </a></li>
+           <li><a href="#faq"> FAQ </a></li>
+           <li><a href="#testimonials"> Testimonials </a></li>
+           <!--<li><a href="/contact"> Contact </a></li>-->
          </ul>
        </div>
      </nav>
@@ -71,122 +70,157 @@
 </header>-->
 
 
-      <section class="parallax" style="background-image:url('/images/tan-girl.jpeg');">
-  <div class="textCenter backgroundBox padding">
-    <h1 class="paddingBottom">Airbrush Tans by Katie</h1>
-    <h3 class="darkText cursive">Book your tan today.</h3>
-    <h4> </h4>
-    <button class="buttonPadding" type="button" name="button"><a class="buttonPadding"href="#">Schedule an Appointment</a></button>
+      <section class="overlay padding">
+  <div class="textCenter">
+    <h1 class="padding">Airbrush Tans by Katie</h1>
   </div>
 </section>
-<section class="grid">
+<section class="grid" id="about">
   <div class="col-6_xs-12">
-    <img src="/images/palms.jpg" alt="">
+    <img src="/images/katie-selfie.jpg" alt="">
   </div>
   <div class="col-6_xs-12 padding">
-    <h3>Meet Katie</h3>
+    <h4>Meet Katie</h4>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   </div>
 </section>
-<section class="grid">
+<section class="grid" id="services">
   <div class="col-12">
-    <h3 class="textCenter">My Services</h3>
-    <hr class="hrCenter">
+    <h3 class="textCenter">The Tanned Cactus Services</h3>
   </div>
   <div class="col-4 textCenter">
     <i class="iconPadding far fa-sun fa-5x"></i>
-    <h4 class="paddingTop">Weddings</h4>
+    <h5 class="paddingTop">Weddings</h5>
   </div>
   <div class="col-4 textCenter">
     <i class="iconPadding fas fa-umbrella-beach fa-5x"></i>
-    <h4 class="paddingTop">Vacations/Holidays</h4>
+    <h5 class="paddingTop">Vacations/Holidays</h5>
   </div>
   <div class="col-4 textCenter">
     <i class="iconPadding fas fa-birthday-cake fa-5x"></i>
-    <h4 class="paddingTop">Dances/Dates</h4>
+    <h5 class="paddingTop">Dances/Dates</h5>
   </div>
   <div class="col-4 textCenter">
     <i class="iconPadding fas fa-camera-retro fa-5x"></i>
-    <h4 class="paddingTop">Competitions and More!</h4>
+    <h5 class="paddingTop">Competitions and More!</h5>
   </div>
   <div class="col-4 textCenter">
     <i class="iconPadding far fa-sun fa-5x"></i>
-    <h4 class="paddingTop">Weddings</h4>
+    <h5 class="paddingTop">Weddings</h5>
   </div>
   <div class="col-4 textCenter">
     <i class="iconPadding fas fa-umbrella-beach fa-5x"></i>
-    <h4 class="paddingTop">Vacations/Holidays</h4>
+    <h5 class="paddingTop">Vacations/Holidays</h5>
   </div>
-  <div class="col-12 textCenter">
+  <div class="col-12 textCenter padding">
     <button class="buttonPadding" type="button" name="button"><a class="buttonPadding"href="#">Schedule an Appointment</a></button>
   </div>
 </section>
-<section class="grid padding">
+<section class="grid padding" id="pricing">
   <div class="col-12">
     <h3 class="textCenter">Pricing</h3>
-    <hr class="hrCenter">
   </div>
-  <div class="col-6_xs-6 padding liStyle">
-    <h3>Airbrush Tans</h3>
+  <div class="col-2">
+
+  </div>
+  <div class="col-4_xs-6 padding liStyle">
+    <h5 class="padding">Airbrush Tans</h5>
     <li>Full Body - $$$</li>
     <li>Legs - $$$$</li>
     <li>Arms - $$$</li>
     <li>Second Application for Darker Tan - $$$</li>
   </div>
-  <div class="col-6_xs-6 padding liStyle">
-    <h3>Products</h3>
+  <div class="col-4_xs-6 padding liStyle">
+    <h5 class="padding">Products</h5>
     <li>Full Body - $$$</li>
     <li>Legs - $$$$</li>
     <li>Arms - $$$</li>
     <li>Second Application for Darker Tan - $$$</li>
+  </div>
+  <div class="col-2">
+
   </div>
 </section>
-<section class="padding">
+
+
+<main class="padding" id="faq">
+
   <h2 class="textCenter">Frequently Asked Questions</h2>
-  <hr class="hrCenter">
-</section>
-<section>
-  <!-- FAQ -->
-  <div class="parent-container">
-    <ul class="faq">
-      <li>
-        <h3 class="question">Will I look orange?
-          <div class="plus-minus-toggle collapsed"></div>
-        </h3>
-        <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis
-          ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed
-          fermentum risus. Phasellus venenatis ultricies dignissim.</div>
-      </li>
-      <li>
-        <h3 class="question">How long will my tan last?
-          <div class="plus-minus-toggle collapsed"></div>
-        </h3>
-        <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis
-          ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed
-          fermentum risus. Phasellus venenatis ultricies dignissim.</div>
-      </li>
-      <li>
-        <h3 class="question">Can I make my tan last longer?
-          <div class="plus-minus-toggle collapsed"></div>
-        </h3>
-        <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis
-          ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed
-          fermentum risus. Phasellus venenatis ultricies dignissim.</div>
-      </li>
-      <li>
-        <h3 class="question">What do I wear during my tan?
-          <div class="plus-minus-toggle collapsed"></div>
-        </h3>
-        <div class="answer">Answer. Donec vitae tellus risus. Aenean sed fermentum risus. Phasellus venenatis
-          ultricies dignissim. Nunc ante lectus, accumsan non porta at. Donec vitae tellus risus. Aenean sed
-          fermentum risus. Phasellus venenatis ultricies dignissim.</div>
-      </li>
-    </ul>
+  <div class="topic">
+    <div class="open">
+      <h2 class="question">1. How Can I make my tan last longer?</h2>
+      <span class="faq-t"></span>
+    </div>
+    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="topic">
+    <div class="open">
+    <h2 class="question">2. What should I wear to my tan?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="topic">
+    <div class="open">
+    <h2 class="question">3. How do I prepare for the tan?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="topic">
+    <div class="open">
+    <h2 class="question">4. How long do tans normally last?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="topic">
+    <div class="open">
+    <h2 class="question">5. Will I look orange?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="topic">
+    <div class="open">
+    <h2 class="question">6. Will my clothing look orange?
+</h2><span class="faq-t"></span>
+    </div>
+    <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</main>
+
+<section id="testimonials"class="testimonials textCenter padding">
+  <div>
+    <h2>Testimonials</h2>
+  </div>
+
+  <div>
+    <div class="slider">
+
+      
+<blockquote class="textCenter padding">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <h5>Name Name</h5>
+</blockquote>
+
+<blockquote class="textCenter padding">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <h5>Name Name</h5>
+</blockquote>
+
+<blockquote class="textCenter padding">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <h5>Name Name</h5>
+</blockquote>
+
+
+    </div>
   </div>
 </section>
 
 
-      <footer class="footerStyle grid-middle-spaceBetween">
+      <!--<footer class="footerStyle grid-middle-spaceBetween">
 
 <div class="col-4 padding textCenter">
   <h3>Frequently Asked Questions</h3>
@@ -206,15 +240,16 @@
   <i class="fab fa-linkedin fa-2x iconPadding"></i>
 
 </div>
-</footer>
+</footer>-->
 
 
 
 <div class="sub-footer">
-  (c) 2018 The Tanned Cactus | Website Designed & Built by Justyn Gourdin
+  (c) 2018 The Tanned Cactus | Site by <a href="https://justynjen.com">Justyn Jen</a>
 </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
 $( document ).ready(function() {
    $(".hamburger-button").click(function(){
@@ -227,6 +262,59 @@ $( document ).ready(function() {
   });
 });
 
+</script>
+<script>
+
+// --------------------------------------------------
+  // Slider
+  // --------------------------------------------------
+  $('.slider').slick({
+    prevArrow: '<a class="arrow-left"></a>',
+    nextArrow: '<a class="arrow-right"></a>',
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+</script>
+<script>
+
+$(".open").click( function () {
+var container = $(this).parents(".topic");
+var answer = container.find(".answer");
+var trigger = container.find(".faq-t");
+
+answer.slideToggle(200);
+
+if (trigger.hasClass("faq-o")) {
+  trigger.removeClass("faq-o");
+}
+else {
+  trigger.addClass("faq-o");
+}
+
+if (container.hasClass("expanded")) {
+  container.removeClass("expanded");
+}
+else {
+  container.addClass("expanded");
+}
+});
 </script>
 
 
